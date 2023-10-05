@@ -40,6 +40,6 @@ const human = {
 }
 
 console.log(document.getElementsByTagName('button')[0]);
-document.getElementsByTagName('button')[0].addEventListener('click',()=>{
-  window.alert('成功！')
-})
+//document.getElementsByTagName('button')[0].addEventListener('click',()=>{
+  //window.alert('成功！')
+//})
