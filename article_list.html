@@ -60,11 +60,13 @@
                 const HTML = include.responseText;
                 const contents = document.querySelector("#"+id);
                 contents.insertAdjacentHTML("afterbegin", HTML);
+                const test = contents.querySelector('#test');
+                console.log(test);
                 }
             };
             include.send();
         };
-        includer("article1.html","main-content");
+        
         includer("head.html","head");
         includer("nav.html","nav");
         includer("footer.html","footer")
@@ -74,6 +76,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./Js/main.js"></script>
+    <script src="./Js/test.js"></script>
     <script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
